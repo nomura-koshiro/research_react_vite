@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    // VSCode日本語化
+    "ms-ceintl.vscode-language-pack-ja",
+    // VSCode IntelliCode
+    "visualstudioexptteam.vscodeintellicode",
+    // ESLint
+    "dbaeumer.vscode-eslint",
+    // Prettier-ESLint
+    "esbenp.prettier-vscode",
+    // Playwright
+    "ms-playwright.playwright",
+    // Todo Tree
+    "Gruntfuggly.todo-tree",
+    // Vitest
+    "ZixuanChen.vitest-explorer"
+  ]
+}

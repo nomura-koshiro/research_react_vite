@@ -1,25 +1,50 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
+    // コンパイル後にどのバージョンのJavaScriptを出力するか(ex.es5,es2015,esnext)
+    "target": "ESNext",
+    // クラスのプロパティの定義にプロパティ初期化子245を使うことを強制させる
     "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
+    // コンパイルの際に含める組み込みライブラリを指定する(ex.es5,es2015,esnext,dom)
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    // JavaScriptファイルのインポートを可能にする
+    "allowJs": false,
+    // .d.tsの型宣言ファイルに対する型チェックをスキップする
     "skipLibCheck": true,
-
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
-
-    /* Linting */
+    // CommonJS / AMD / UMD 形式のモジュールをESModulesと同様に扱えるようにする
+    "esModuleInterop": false,
+    // 明示的にデフォルトエクスポートしていないモジュールでもデフォルトインポートできるようにする
+    "allowSyntheticDefaultImports": true,
+    // 厳格な型チェックのオプションをすべて有効にする
     "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    // インポート時にファイルパス記述の大文字・小文字を区別する
+    "forceConsistentCasingInFileNames": true,
+    // 出力するモジュールの形式を指定する(ex.commonjs,amd,es2015,nodenext)
+    "module": "ESNext",
+    // モジュールの解決戦略を指定する(ex.classic,node)
+    "moduleResolution": "bundler",
+    // JSON ファイルをインポートしてできたオブジェクトに自動的に型をつける
+    "resolveJsonModule": true,
+    // すべてのファイルを単一のモジュールとしてコンパイルする場合に安全でないと思われるいくつかの記法をコンパイルエラーにする
+    "isolatedModules": true,
+    // 型チェックのみを行い、コンパイル結果のファイルを一切出力しない
+    "noEmit": true,
+    // JSX をどのような構成のJavaScriptに出力するか( ex. preserve, react, react-jsx )
+    "jsx": "react-jsx",
+    // srcの起点
+    "baseUrl": ".",
+    // パスのエイリアス
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    // emotionを使用するためのJSX pragma
+    "jsxImportSource": "@emotion/react",
+    // vitestの設定
+    "types": [
+      "vitest/globals"
+    ]
   },
+  // コンパイルの対象を指定する。 globパターンが使え、またディレクトリを指定するとその配下のファイルが再帰的にすべて対象となる
   "include": ["src"],
+  // 他のTypeScriptプロジェクトを参照する
   "references": [{ "path": "./tsconfig.node.json" }]
 }
