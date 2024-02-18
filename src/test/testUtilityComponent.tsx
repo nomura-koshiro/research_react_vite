@@ -23,14 +23,12 @@ export const LOCATION_DISPLAY = 'location-display'
 
 export const LocationDisplay = (): JSX.Element => {
   const location = useLocation()
-  // NOTE コンポーネント表示時に、ルートへ移動
   const navigate = useNavigate()
 
   useEffect(() => {
-    // NOTE このコンポーネントの表示終了後にルートへ移動
+    // このコンポーネントの表示終了後にルートへ移動
     navigate('/')
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, []) // 空の配列を渡しているため、このeffectはコンポーネントがマウントされたときにのみ実行されます。
 
   return (
     <>
@@ -43,9 +41,9 @@ export const LocationDisplay = (): JSX.Element => {
 // NOTE react-router-domまたはTanstackQueryを利用しているコンポーネントのテストに使用
 // ********************************************************************************
 type TestAppProviderProps = {
-  // NOTE 画面に現在のパスを表示するか
+  // 画面に現在のパスを表示するか
   isDisplayLocation?: boolean
-  // NOTE テスト対象のコンポーネント
+  // テスト対象のコンポーネント
   children: JSX.Element
 }
 
