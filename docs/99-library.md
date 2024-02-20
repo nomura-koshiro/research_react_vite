@@ -45,3 +45,8 @@
 11. **zustand:**
     - **説明:** Reactのためのシンプルで効果的な状態管理ライブラリ。`useContext` と `useReducer` のパワーを組み合わせて、状態の変更や共有を容易にします。
     - **ドキュメント URL:** [Zustand Documentation](https://zustand.surge.sh/)
+
+tailwindcss
+postcss
+clsx
+autoprefixer@latest
