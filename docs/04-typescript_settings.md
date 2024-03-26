@@ -1,4 +1,4 @@
-# Reactアプリケーションドキュメント - TypeScript設定
+# TypeScript設定
 
 このドキュメントでは、TypeScriptを使用したプロジェクトのセットアップ後の`tsconfig.json`ファイルの設定を説明します。以下にその詳細を示します。
 
