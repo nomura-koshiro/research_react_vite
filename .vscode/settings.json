@@ -1,0 +1,91 @@
+{
+  // ********************************************************************************
+  // エディタ
+  // ********************************************************************************
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // フォーマット時に使用する拡張機能を指定
+  "editor.formatOnSave": false, // VS Code 内臓のフォーマッタを停止し、上記editor.codeActionsOnSaveの設定にてフォーマットを実行
+  "editor.insertSpaces": true, // インデントは空白文字(半角スペース)を使用
+  "editor.renderWhitespace": "all", // 空白文字の表示方法の設定 allはすべてのスペースを表示
+  "editor.rulers": [120], // 垂直ルーラーを表示する列位置
+  "editor.tabSize": 2, // tabキーで入力されるスペースの数
+  "editor.detectIndentation": false, // 既存のファイルのtabキーのtabSizeを継承しない(これによりeditor.tabSizeが全ファイルで統一される)
+  // ********************************************************************************
+  // VSCode Linterを停止させ、StyleLintにてValidationを行うための設定
+  // ********************************************************************************
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  // ********************************************************************************
+  // ファイル
+  // ********************************************************************************
+  "files.eol": "\n", // 改行コードの指定
+  "files.insertFinalNewline": true, // ファイル末尾に改行を自動挿入
+  "files.trimTrailingWhitespace": true, // 行末の空白(半角スペース)を自動で削除
+  // ********************************************************************************
+  // ESLint
+  // ********************************************************************************
+  "eslint.workingDirectories": [{ "mode": "auto" }], // ESLint対象を自動的に探す
+  // ********************************************************************************
+  // Prettier フォーマットを行うファイルを指定
+  // ********************************************************************************
+  "[css]": {
+    "editor.formatOnSave": true
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true
+  },
+  // ********************************************************************************
+  // Vitest
+  // ********************************************************************************
+  "vitest.enable": true,
+  "vitest.exclude":[
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/.{idea,git,cache,output,temp}/**",
+    "**/src/test/e2e/**",
+  ],
+  // ********************************************************************************
+  // Todo Tree
+  // ********************************************************************************
+  "todo-tree.general.tags": ["FIXME", "NOTE", "TODO", "CHECK"],
+  "todo-tree.highlights.defaultHighlight": {
+    "gutterIcon": true
+  },
+  "todo-tree.highlights.customHighlight": {
+    "FIXME": {
+      "foreground": "#000000",
+      "background": "#ffffff"
+    },
+    "NOTE": {
+      "foreground": "#000000",
+      "background": "#ffffff"
+    },
+    "TODO": {
+      "foreground": "#000000",
+      "background": "#ffffff"
+    },
+    "CHECK": {
+      "foreground": "#ffffff",
+      "background": "#00bfff",
+    },
+  },
+}
+
+
+
