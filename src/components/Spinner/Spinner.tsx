@@ -1,16 +1,13 @@
-import { css } from '@emotion/react'
-
 export const Spinner = (): JSX.Element => {
   return (
-    <div css={spinerOuter}>
-      <div css={spinerCentering}>
+    <div>
+      <div>
         {/* TODO iconコンポーネントが存在するか確認 */}
         <svg
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
           data-icon="spinner"
-          css={icon}
           role="img"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
@@ -24,33 +21,3 @@ export const Spinner = (): JSX.Element => {
     </div>
   )
 }
-
-const spinerOuter = css`
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.75);
-  z-index: 2147483647;
-`
-const spinerCentering = css`
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 100%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-`
-const icon = css`
-  width: 48px;
-  animation: rotate-anime 2s linear infinite;
-  @keyframes rotate-anime {
-    0% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-`

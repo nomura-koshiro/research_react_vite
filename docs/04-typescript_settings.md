@@ -27,7 +27,6 @@
 - **`jsx`**: `react-jsx` - React 17以降の新しいJSX変換を使用します。
 - **`baseUrl`**: `.` - モジュール解決のベースURLをプロジェクトのルートディレクトリに設定します。
 - **`paths`**: モジュールのパスエイリアスを設定します。例: `@/*`を`./src/*`にマッピング。
-- **`jsxImportSource`**: `@emotion/react` - emotionを使用するためのJSX pragmaを指定します。
 
 ### include
 

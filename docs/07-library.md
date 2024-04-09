@@ -1,59 +1,55 @@
 
 ### Dependencies
 
-1. **@emotion/react**
-   - 説明: Emotionは、Reactでのスタイリングを可能にする強力なライブラリです。CSS-in-JS ライブラリとして、コンポーネントにスタイルを直接適用することができます。
-   - 公式ドキュメント: [Emotion React](https://emotion.sh/docs/@emotion/react)
-
-2. **@hookform/resolvers**
+1. **@hookform/resolvers**
    - 説明: react-hook-formのためのバリデーションリゾルバーのコレクションです。Yup、Zod、Superstructなどの外部バリデーションライブラリと連携します。
    - 公式ドキュメント: [Hookform Resolvers](https://github.com/react-hook-form/resolvers)
 
-3. **@tanstack/react-query**
+2. **@tanstack/react-query**
    - 説明: データフェッチング、キャッシング、同期、アップデートのためのライブラリです。サーバー状態の管理を効率的に行うことができます。
    - 公式ドキュメント: [React Query](https://tanstack.com/query/v4/docs/overview)
 
-4. **@tanstack/react-query-devtools**
+3. **@tanstack/react-query-devtools**
    - 説明: React Queryの開発者ツールです。データフェッチの状態やキャッシュデータを簡単に確認できます。
    - 公式ドキュメント: [React Query Devtools](https://tanstack.com/query/v4/docs/devtools/overview)
 
-5. **axios**
+4. **axios**
    - 説明: ブラウザやNode.jsで動作するPromiseベースのHTTPクライアント。簡単にHTTPリクエストを行うことができます。
    - 公式ドキュメント: [Axios](https://axios-http.com/)
 
-6. **clsx**
+5. **clsx**
    - 説明: classNameを条件付きで結合するための小さなユーティリティライブラリです。コンポーネントのクラスを動的に組み合わせる際に便利です。
    - 公式ドキュメント: [clsx GitHub](https://github.com/lukeed/clsx)
 
-7. **lodash**
+6. **lodash**
    - 説明: JavaScriptのユーティリティライブラリで、配列、数値、オブジェクト、文字列などを操作する便利なメソッドを提供します。
    - 公式ドキュメント: [Lodash](https://lodash.com/)
 
-8. **react**
+7. **react**
    - 説明: ユーザーインターフェイスを構築するためのJavaScriptライブラリです。コンポーネントベースで開発を行うことができます。
    - 公式ドキュメント: [React](https://reactjs.org/)
 
-9. **react-dom**
+8. **react-dom**
    - 説明: React要素をDOMにレンダリングするためのライブラリです。Reactと一緒に使用されます。
    - 公式ドキュメント: [React DOM](https://reactjs.org/docs/react-dom.html)
 
-10. **react-error-boundary**
+9.  **react-error-boundary**
     - 説明: Reactコンポーネントのエラーバウンダリを簡単に実装できるライブラリです。エラーをキャッチして、代替のUIを表示することができます。
     - 公式ドキュメント: [React Error Boundary](https://github.com/bvaughn/react-error-boundary)
 
-11. **react-hook-form**
+10. **react-hook-form**
     - 説明: React用の軽量でパフォーマンスに優れたフォームライブラリです。簡単にフォームのバリデーションと送信を扱うことができます。
     - 公式ドキュメント: [React Hook Form](https://react-hook-form.com/)
 
-12. **react-router-dom**
+11. **react-router-dom**
     - 説明: React用のルーティングライブラリです。シングルページアプリケーションのナビゲーションを実現します。
     - 公式ドキュメント: [React Router](https://reactrouter.com/)
 
-13. **yup**
+12. **yup**
     - 説明: JavaScriptオブジェクトのスキーマ検証を行うためのライブラリです。主にフォームのバリデーションに使用されます。
     - 公式ドキュメント: [Yup](https://github.com/jquense/yup)
 
-14. **zustand**
+13. **zustand**
     - 説明: React用の状態管理ライブラリです。グローバルステートを簡単に作成し、使用することができます。
     - 公式ドキュメント: [Zustand](https://github.com/pmndrs/zustand)
 

@@ -1,5 +1,3 @@
-import { css } from '@emotion/react'
-
 type LoginErrorMessageProps = {
   email: undefined | string
   password: undefined | string

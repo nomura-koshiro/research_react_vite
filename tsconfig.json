@@ -36,8 +36,6 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    // emotionを使用するためのJSX pragma
-    "jsxImportSource": "@emotion/react",
     // vitestの設定
     "types": [
       "vitest/globals"

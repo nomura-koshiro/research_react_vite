@@ -14,10 +14,9 @@
 Storybookとそのインタラクションテストを使用するために、いくつかの依存関係が必要になります。以下のコマンドでこれらのパッケージを追加してください。
 
 ```bash
-yarn add @emotion/react @storybook/jest @storybook/testing-library --dev
+yarn add @storybook/jest @storybook/testing-library --dev
 ```
 
-- `@emotion/react`は、CSS-in-JS スタイルの記述を可能にします。
 - `@storybook/jest`と`@storybook/testing-library`は、Storybook内でのコンポーネントのテストをサポートします。
 
 ##### 2. Storybookのインストールと初期設定
