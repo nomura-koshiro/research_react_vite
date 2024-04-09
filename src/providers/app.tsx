@@ -5,13 +5,11 @@ import { BrowserRouter } from 'react-router-dom'
 import { ErrorFallback } from '@/components/ErrorFallback'
 import { API_MOCKING } from '@/config'
 import { queryClient } from '@/lib/react-query'
-import { worker } from '@/test/msw/browser'
 
 // NOTE MSWを動作させる
 if (API_MOCKING) {
-  void worker.start({
-    onUnhandledRequest: 'bypass',
-  })
+  const { worker } = await import('../test/msw/browser')
+  worker.start()
 }
 
 type AppProviderProps = {
