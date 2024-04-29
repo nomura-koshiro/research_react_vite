@@ -3,6 +3,7 @@ import { Navigate, Outlet } from 'react-router-dom'
 import { Layout } from '@/components/Layout/Layout/Layout'
 import { Spinner } from '@/components/Spinner'
 import { lazyImport } from '@/utils/lazyImport'
+import { Description } from '@/features/index/components/Description'
 
 const { LoginRoutes } = lazyImport(
   async () => await import('@/features/login'),
@@ -26,6 +27,7 @@ export const generalUserRoutes = [
     element: <App />,
     children: [
       { path: '/login/*', element: <LoginRoutes /> },
+      { path: '/', element: <Description /> },
       { path: '*', element: <Navigate to="." /> },
     ],
   },
