@@ -41,7 +41,3 @@ yarn add -D prettier eslint-config-prettier
   "endOfLine": "auto"  // 改行コードの設定を自動にする
 }
 ```
-
-## 結論
-
-PrettierとESLintを併用することで、コードの一貫性を保ちつつ、スタイルと構文の両方で高品質なコードを保つことができます。これらの設定を適切に行うことで、開発効率の向上にもつながります。

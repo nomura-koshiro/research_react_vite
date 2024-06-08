@@ -131,5 +131,3 @@ yarn add --dev eslint-plugin-jsx-a11y eslint-plugin-react-hooks
 ### `settings`:
 このセクションでは、ESLintの動作を細かく制御するための設定を行います。
 - **`react`:** Reactのバージョンを自動検出するように設定しています。
-
-この`.eslintrc.json`ファイルにより、ESLintは指定されたルールに従ってコードを検査し、一貫性のある高品質なコードベースを維持するのに役立ちます。プロジェクトのニーズやチームの好みに応じて、これらの設定をさらにカスタマイズすることが可能です。

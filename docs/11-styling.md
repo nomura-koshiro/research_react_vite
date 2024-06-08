@@ -73,5 +73,3 @@ const MyComponent = () => (
     </Menu>
 );
 ```
-
-このガイドを通じて、Tailwind CSS、Headless UI、およびclsxを使ったスタイリングとコンポーネント構築がスムーズに行えるようになります。
